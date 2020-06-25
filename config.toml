@@ -1,6 +1,6 @@
-baseURL = "http://example.org/"
+baseURL = "https://writing.grantcuster.com/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Writing - Grant Custer"
 
 [outputFormats]
   [outputFormats.RSS]
