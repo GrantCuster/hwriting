@@ -3,26 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://writing.grantcuster.com/posts/</loc>
     <lastmod>2020-06-25T10:18:20+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/</loc>
+    <loc>https://writing.grantcuster.com/posts/2020-06-25-vimlike/</loc>
     <lastmod>2020-06-25T10:18:20+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/2020-06-25-vimlike/</loc>
+    <loc>https://writing.grantcuster.com/</loc>
     <lastmod>2020-06-25T10:18:20+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://writing.grantcuster.com/categories/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://writing.grantcuster.com/tags/</loc>
   </url>
   
 </urlset>
