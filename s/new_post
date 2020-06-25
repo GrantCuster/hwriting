@@ -1,0 +1,26 @@
+#!/bin/bash
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+base=`echo $DIR | sed 's|\(.*\)/.*|\1|'`
+relpath="$base/content/posts/"
+date=`date '+%FT%T'`
+
+echo "Enter the title for your post:"
+read name
+
+slug=`echo "$name" | iconv -t ascii//TRANSLIT | sed -E 's/[~\^]+//g' | sed -E 's/[^a-zA-Z0-9]+/-/g' | sed -E 's/^-+\|-+$//g' | sed -E 's/^-+//g' | sed -E 's/-+$//g' | tr A-Z a-z`
+timestamp=`date '+%Y-%m-%d'`
+filename="$timestamp-$slug.md"
+place="$relpath$filename"
+
+echo "creating file $place"
+
+echo "---
+date: $date
+title: \"$name\"
+---
+
+" >> "$place"
+
+st -e zsh -c "vim + $place" &
+

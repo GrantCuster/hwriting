@@ -1,0 +1,26 @@
+{{ define "head" }}
+{{ $title := print .Title " - Grant Custer" }}
+{{ $description := .Summary }}
+<title>{{ $title }}</title>
+<meta property="description" content="{{ $description }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:image" content="{{ .Site.BaseURL }}writing.png">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="twitter:card" content="summary_large_image">
+{{ end }}
+
+
+{{ define "main" }}
+<div class="container">
+  <div><a href="/">Writing</a></div>
+  <div>{{ .Date.Format "2006.01.02" }}</div>
+  <div class="spacer"></div>
+  <h1>{{ .Title }}</h1>
+  <div>{{ .Content }}</div>
+  <div>***</div>
+  <div class="spacer"></div>
+  <div><a href="/">More writing</a></div>
+  <div class="spacer"></div>
+</div>
+{{ end }}

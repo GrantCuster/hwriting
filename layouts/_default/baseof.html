@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+    <link rel="stylesheet" type="text/css" href="/font.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    {{ block "head" . }}{{ end }}
+  </head>
+  <body>
+   <div class="hspacer"></div>
+    <div class="container">
+      <div>Grant Custer</div>
+      <div><p style="margin: 0; text-indent: 2ch"><a href="https://feed.grantcuster.com">Feed</a>&nbsp; <a href="/">Index</a>&nbsp; <a href="https://twitter.com">Twitter</a></p></div>
+    </div>
+    <div class="spacer"></div>
+    {{ block "main" . }}{{ end }}
+    <div class="container indent">
+     <div>About</div>
+      <p>Grant Custer is a designer-programmer interested in alternative interfaces.</p>
+      <p>{{ `You can see work and inspiration in progress on my [Feed](https://feed.grantcuster.com)  and my alternative interface experiments on [Constraint Systems](https://constraint.systems). I also design and build prototypes for [Cloudera Fast Forward](https://blog.fastforwardlabs.com). I’m happy to talk on [Twitter](https://twitter.com/grantcuster), email: grantcuster at gmail dot com, or [Mastodon](https://vis.social/@grantcuster). You can see a full list of projects on my [Index](https://grantcuster.com).` | markdownify }}</p>
+      </p>
+    </div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+  </body>
+</html>
