@@ -144,3 +144,11 @@ title="The final result."
 >}}
 
 I just modified the shell scripts for the specific gruvbox color schemes I wanted, but the cleaner way to do it would be to modify the shell template and regenerate them all. For now, I'm happy I got everything working and learned more about escape sequences and the structure of the Linux file system in the process.
+
+## Lessons learned
+
+Part of why I'm exploring Linux and scripting is to get a feel for how software could be more customizeable. A few things were especially interesting to me here:
+
+1. Writing to all open terminals is a great example of the power of "everything is a file". Being able to locate all the open terminals and send the escape sequences to them through the file system interface shifted my mental model about scripting possibilities. I usually think of applications and files as very separate, and this blurred that a bit. I'd read people talk about the power of the file concept before but this is one of the first times its been useful for something I was trying to do. I will spend some time thinking about how the file system concept could be applied to the software I make.
+2. Escape sequences. I'm trying to think if you would ever want to include them (or a concept like them) in an application created from scratch. I don't think so. They're useful when you want to do formatting and the only interface you have with the program is that you can write text characters to it. The style is embedded in the text, but because the embedding is an invsible it's going to be pretty unpredictable if you try and move it between programs.
+3. The power of plain text and the being able to manipulate plain text. Lots of the config files for Linux applications are in a simple, plain text format. Coming from Javascript, I'm more used to intaking data as JSON and doing the manipulation in Javascript. In Linux you're more likely to manipulate the text directly, and there's a bunch of tools to help you do this. I'm sure that in some respects this leads to more formatting edge-case errors, but there's also a beauty to the simplicity. You can see this in how Pywal handles changing color config for a lot of applications: generate a color config in the proper format, then just include that in the larger appplication configuration. 
