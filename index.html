@@ -160,6 +160,13 @@ done
 </figure>
 
 <p>I just modified the shell scripts for the specific gruvbox color schemes I wanted, but the cleaner way to do it would be to modify the shell template and regenerate them all. For now, I&rsquo;m happy I got everything working and learned more about escape sequences and the structure of the Linux file system in the process.</p>
+<h2 id="lessons-learned">Lessons learned</h2>
+<p>Part of why I&rsquo;m exploring Linux and scripting is to get a feel for how software could be more customizeable. A few things were especially interesting to me here:</p>
+<ol>
+<li>Writing to all open terminals is a great example of the power of &ldquo;everything is a file&rdquo;. Being able to locate all the open terminals and send the escape sequences to them through the file system interface shifted my mental model about scripting possibilities. I usually think of applications and files as very separate, and this blurred that a bit. I&rsquo;d read people talk about the power of the file concept before but this is one of the first times its been useful for something I was trying to do. I will spend some time thinking about how the file system concept could be applied to the software I make.</li>
+<li>Escape sequences. I&rsquo;m trying to think if you would ever want to include them (or a concept like them) in an application created from scratch. I don&rsquo;t think so. They&rsquo;re useful when you want to do formatting and the only interface you have with the program is that you can write text characters to it. The style is embedded in the text, but because the embedding is an invsible it&rsquo;s going to be pretty unpredictable if you try and move it between programs.</li>
+<li>The power of plain text and the being able to manipulate plain text. Lots of the config files for Linux applications are in a simple, plain text format. Coming from Javascript, I&rsquo;m more used to intaking data as JSON and doing the manipulation in Javascript. In Linux you&rsquo;re more likely to manipulate the text directly, and there&rsquo;s a bunch of tools to help you do this. I&rsquo;m sure that in some respects this leads to more formatting edge-case errors, but there&rsquo;s also a beauty to the simplicity. You can see this in how Pywal handles changing color config for a lot of applications: generate a color config in the proper format, then just include that in the larger appplication configuration.</li>
+</ol>
 </div>
         <div><a href="/posts/2020-07-12-swapping-color-schemes-across-all-terminals-and-vim-with-pywal-and-base16/">Permalink</a></div>
         <div class="spacer"></div>
