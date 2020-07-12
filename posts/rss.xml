@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Writing - Grant Custer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Jun 2020 10:18:20 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2020 12:12:51 +0000</lastBuildDate>
     
 	<atom:link href="https://writing.grantcuster.com/posts/rss.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Swapping color schemes across all terminals and Vim with Pywal and Base16</title>
+      <link>https://writing.grantcuster.com/posts/2020-07-12-swapping-color-schemes-across-all-terminals-and-vim-with-pywal-and-base16/</link>
+      <pubDate>Sun, 12 Jul 2020 12:12:51 +0000</pubDate>
+      
+      <guid>https://writing.grantcuster.com/posts/2020-07-12-swapping-color-schemes-across-all-terminals-and-vim-with-pywal-and-base16/</guid>
+      <description>Switching between light and dark colorschemes in all terminals using a hotkey.   I recently got instant light and dark color scheme toggle working for all open terminals, including those running Vim. I used a combination of techniques from Pywal and Base16 shell, and learned some things about scripting in Linux and escape sequences along the way.
+Pywal Pywal is a package for switching color schemes system wide.</description>
+    </item>
     
     <item>
       <title>Vimlike</title>
