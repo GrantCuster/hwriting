@@ -1,0 +1,26 @@
+#!/bin/bash
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+base=`echo $DIR | sed 's|\(.*\)/.*|\1|'`
+relpath="$base/content/posts/"
+date=`date '+%FT%T'`
+
+sed -i "s/date:.*/date: $date/" $1
+
+test=$(awk '/^title:/' $1 | awk -F'"' '{ print $2 }')
+
+echo -e $test
+
+read -p "Change title?
+" -i "$test" -e new_title
+
+sed -i "s/title:.*/title: \"$new_title\"/" $1
+
+slug=`echo "$new_title" | iconv -t ascii//TRANSLIT | sed -E 's/[~\^]+//g' | sed -E 's/[^a-zA-Z0-9]+/-/g' | sed -E 's/^-+\|-+$//g' | sed -E 's/^-+//g' | sed -E 's/-+$//g' | tr A-Z a-z`
+timestamp=`date '+%Y-%m-%d'`
+filename="$timestamp-$slug.md"
+place="$relpath$filename"
+
+mv $1 $place
+
+echo "Saved $place"

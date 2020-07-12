@@ -6,3 +6,9 @@ title = "Writing - Grant Custer"
   [outputFormats.RSS]
     mediatype = "application/rss"
     baseName = "rss"
+
+[markup]
+  [markup.highlight]
+    lineNumbersInTable = true
+    style = "bw"
+

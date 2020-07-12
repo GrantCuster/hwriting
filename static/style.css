@@ -12,6 +12,43 @@ body {
   line-height: 24px;
   color: #222;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: normal;
+  margin: 0;
+}
+h1 {
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 24px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+h3 {
+  margin-top: 32px;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+figure {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+}
+figcaption {
+  margin: 0;
+  padding: 0;
+  padding-left: 2ch;
+  margin-top: 12px;
+}
 img {
   max-width: 100%;
   display: block;
@@ -21,12 +58,6 @@ img {
   padding-left: 12px;
   padding-right: 12px;
   margin: 0 auto;
-}
-h1 {
-  font-size: inherit;
-  margin: 0;
-  font-weight: normal;
-  margin-bottom: 24px;
 }
 p {
   margin: 0;
@@ -42,8 +73,28 @@ blockquote {
 }
 code {
   background: #fff;
-  padding-left: 0.5ch;
-  padding-right: 0.5ch;
+  font-size: 13.33px;
+  line-height: 24px;
+  padding-left: 1ch;
+  padding-right: 1ch;
+}
+pre {
+  font-size: 13.33px;
+  line-height: 20px;
+  background: #fff;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 1ch;
+  margin-bottom: 24px;
+  width: 100%;
+  overflow: auto;
+}
+pre span {
+  font-style: normal !important;
+}
+pre code {
+  padding: 0;
+  background: transparent;
 }
 .qspacer {
   width: 100%;
