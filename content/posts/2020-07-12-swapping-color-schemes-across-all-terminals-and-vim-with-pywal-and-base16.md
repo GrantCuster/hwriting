@@ -48,7 +48,7 @@ This is what the gruvbox dark theme looks like in Pywal's colorschemes directory
   }
 }
 ```
-A JSON file declaring each color. OK, but how do those colors get communicated to the application? The [customization](https://github.com/dylanaraps/pywal/wiki/Customization) instructions mention `~/.cache/wal` a lot, so let's see what's in there:
+A JSON file declaring each color. OK, but how do those colors get communicated to the applications? The [customization](https://github.com/dylanaraps/pywal/wiki/Customization) instructions mention `~/.cache/wal` a lot, so let's see what's in there:
 
 ```
 # ls ~/.cache/wal
@@ -61,13 +61,11 @@ colors-konsole.colorscheme  colors-speedcrunch.json  colors-wal.vim
 colors-oomox                colors-sway              colors-waybar.css
 ```
 
-Ah! It's using the JSON color schemes to generate application specific color scheme files.
-
-This is  a great example of figuring out which level of abstraction to intervene at: Pywal defines a standard color scheme spec and uses application specific templates to generate files from it. If anyone wants to add a new color scheme or application template the procedure for doing so is clear and self-contained.
+Ah! It's using the JSON color schemes to generate application specific color scheme files. This is  a great example of figuring out which level of abstraction to intervene at: Pywal defines a standard color scheme spec and uses application specific templates to generate files from it. If anyone wants to add a new color scheme or application template the procedure for doing so is clear and self-contained.
 
 ### Live reload and escape sequences
 
-To change color schemes in many applications, Pywal builds the color config file and sends a message to the application to reload. For terminals, it does something different. It uses [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code), invisible character sequences that give a terminal color and formatting instructions, to instantly swap out the colors.
+To change color schemes in most applications, Pywal builds the color config file and sends a message to the application to reload. For terminals, it does something different. It uses [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code), invisible character sequences that give a terminal color and formatting instructions, to instantly swap out the colors.
 
 You can see how this works in Pywal's [sequences.py](https://github.com/dylanaraps/pywal/blob/master/pywal/sequences.py). The conversion from the JSON hex color to the terminal readable escape sequence is here: 
 
@@ -110,11 +108,11 @@ This shows the power of Unix's "everything is a file" approach. The script locat
 
 ### Vim issues
 
-Pywal worked beautifully for me except for Vim. It may not be an issue for you depending on how your Vim and terminal color schemes are configured, but in my case to get the proper color scheme I needed to not only swap the terminal colors but also toggle the `background` setting in Vim between `light` and `dark`. I eventually got this working using `xdotool` to trigger a toggle hotkey in Vim, but it was not nearly as clean a process as the main `write directly to terminal` Pywal approach. So I went hunting for other solutions.
+Pywal worked beautifully for me except for Vim. It may not be an issue depending on how your Vim and terminal color schemes are configured, but in my case to get the proper color scheme I needed to not only swap the terminal colors but also toggle the `background` setting in Vim between `light` and `dark`. I eventually got this working using `xdotool` to trigger a toggle hotkey in Vim, but it was not nearly as clean a process as the main `write directly to terminal` Pywal approach. So I went hunting for other solutions.
 
 ## Base16
 
-[Base16](https://github.com/chriskempson/base16) is a standardized format for creating 16-color terminal color schemes. Those color schemes can then be combined with templates to produce color configurations for a wide range of applications. [Base16 shell](https://github.com/chriskempson/base16-shell) is the set of scripts that converts those color schemes into escape sequences to be applied to terminals.
+[Base16](https://github.com/chriskempson/base16) is a standardized format for creating 16-color terminal color schemes. Those color schemes can then be combined with templates to produce color configurations for a wide range of applications. [Base16 shell](https://github.com/chriskempson/base16-shell) is a set of scripts that converts those color schemes into escape sequences to be applied to terminals.
 
 The main draw for me for Base16 was that their [Vim package](https://github.com/chriskempson/base16-vim) lets you set a base Vim color scheme that works wonderfully with any Base16 terminal color scheme, no `background` setting change needed. (Pywal does also have a version of this, but I was much less impressed with the base Pywal Vim color scheme.)
 
@@ -136,7 +134,7 @@ done
 ...
 ```
  
-I converted the Pywal `send` function into Bash, and wrapped the part of the shell script that sent the escape sequences. I also set it to save the sequences to a cache, to be run for each new terminal. This got me the exact terminal and Vim color swap I wanted. I set up a toggle script and assigned a hotkey using my window mananger `i3wm`. If I want to swap color palettes on other applications, I can add the necessary steps into the toggle script. I like knowing exactly what the toggle script is doing in here, vs. Pywal's "we'll try and take care of everything we can".
+I converted the Pywal `send` function into Bash, and wrapped the part of the shell script that sent the escape sequences. I also set it to save the sequences to a cache, to be run for each new terminal. This got me the exact terminal and Vim color swap I wanted. I set up a toggle script and assigned a hotkey using my window mananger `i3wm`. If I want to swap color palettes on other applications, I can add the necessary steps into the toggle script. I like knowing exactly what the toggle script is doing, vs. Pywal's "we'll try and take care of everything we can".
 
 {{< 
 figure src="/images/gif-2020-07-11_08-51-21@2x-1594472001.gif" 
@@ -149,6 +147,6 @@ I just modified the shell scripts for the specific gruvbox color schemes I wante
 
 Part of why I'm exploring Linux and scripting is to get a feel for how software could be more customizeable. A few things were especially interesting to me here:
 
-1. Writing to all open terminals is a great example of the power of "everything is a file". Being able to locate all the open terminals and send the escape sequences to them through the file system interface shifted my mental model about scripting possibilities. I usually think of applications and files as very separate, and this blurred that a bit. I'd read people talk about the power of the file concept before but this is one of the first times its been useful for something I was trying to do. I will spend some time thinking about how the file system concept could be applied to the software I make.
-2. Escape sequences. I'm trying to think if you would ever want to include them (or a concept like them) in an application created from scratch. I don't think so. They're useful when you want to do formatting and the only interface you have with the program is that you can write text characters to it. The style is embedded in the text, but because the embedding is an invsible it's going to be pretty unpredictable if you try and move it between programs.
+1. Writing to all open terminals is a great example of the power of "everything is a file". Being able to locate all the open terminals and send the escape sequences to them through the file system interface shifted my mental model about scripting possibilities. I usually think of applications and files as very separate, and this blurred that a bit. I'd seen people talk about the power of the file concept before but this is one of the first times its been useful for something I was trying to do. I will spend some time thinking about how the file system concept could be applied to the software I make.
+2. Escape sequences. I'm trying to think if you would ever want to include them (or a concept like them) in an application created from scratch. I don't think so. They're useful when you want to do formatting and the only interface you have with the program is that you can write text characters to it. The style is embedded in the text, but because the embedding is invisible it's going to be pretty unpredictable if you try and move it between programs.
 3. The power of plain text and the being able to manipulate plain text. Lots of the config files for Linux applications are in a simple, plain text format. Coming from Javascript, I'm more used to intaking data as JSON and doing the manipulation in Javascript. In Linux you're more likely to manipulate the text directly, and there's a bunch of tools to help you do this. I'm sure that in some respects this leads to more formatting edge-case errors, but there's also a beauty to the simplicity. You can see this in how Pywal handles changing color config for a lot of applications: generate a color config in the proper format, then just include that in the larger appplication configuration. 
