@@ -12,11 +12,11 @@
     
 
 
-<title>Automadraw - Grant Custer</title>
+<title>Automadraw: release notes - Grant Custer</title>
 <meta property="description" content="Automadraw is a new app I made for my Constraint Systems project. It lets you draw and evolve your drawing using cellular automata using two keyboard controlled cursors.
 What is it for I think there are two main uses for Automadraw:
  Get more familiar with the cellular automata (Conway&rsquo;s Game of Life and Langton&rsquo;s Ant) that it runs. You can quickly experiment with lots of different patterns. Draw something collaboratively with the automata.">
-<meta property="og:title" content="Automadraw - Grant Custer">
+<meta property="og:title" content="Automadraw: release notes - Grant Custer">
 <meta property="og:description" content="Automadraw is a new app I made for my Constraint Systems project. It lets you draw and evolve your drawing using cellular automata using two keyboard controlled cursors.
 What is it for I think there are two main uses for Automadraw:
  Get more familiar with the cellular automata (Conway&rsquo;s Game of Life and Langton&rsquo;s Ant) that it runs. You can quickly experiment with lots of different patterns. Draw something collaboratively with the automata.">
@@ -38,7 +38,7 @@ What is it for I think there are two main uses for Automadraw:
 <div class="container">
   <div><a href="/">Writing</a></div>
   <div class="jbm">2020.07.30</div>
-  <h1>Automadraw</h1>
+  <h1>Automadraw: release notes</h1>
   <div><figure>
     <img src="/images/automadraw-1596131469.gif"/> 
 </figure>
@@ -66,7 +66,8 @@ What is it for I think there are two main uses for Automadraw:
 </figure>
 
 <p>This set-up is uniquely suited to keyboard cursor controls, where each cursor&rsquo;s position is fully visible and fully predictable (versus a touch interface where you would have to use multiple fingers and the fingers themselves would obscure your view of the changes taking place). I use Vim-like keyboard controls because I honestly prefer them. My suspicion is that they may enable modes of interaction other methods do not. I was happy to find an interaction that fit them so well. I&rsquo;m looking forward to seeing how even more multiple cursors feel in future experiments.</p>
-<p>(<a href="https://stamp.constraint.systems">Stamp</a> is a different example of the possibilities of multiple cursors: two cursors across two canvases.)</p>
+<p><a href="https://stamp.constraint.systems">Stamp</a> is a different example of the possibilities of multiple cursors: two cursors across two canvases.</p>
+<p><img src="/images/stamp-1596133133.gif" alt=""></p>
 <h2 id="keyboard-events">Keyboard events</h2>
 <p>Part of the reason the two cursor interaction is interesting is because of an accident of keyboard event handling. A lot of the Constraint System experiments let you hold down multiple keys. This is tricky to handle in Javascript for everything except modifier keys. The main issue is that if you&rsquo;re holding down one key, and start holding an additional one, the new one will take over the <code>keyDown</code> event. The solution is to make a keymap object, store each key on <code>keyDown</code> and remove it on on <code>keyUp</code>. You then use the keymap object for the source of truth about what is pressed on each <code>keyDown</code> event.</p>
 <p>This technique mostly just works, but there turns out to be an issue, arguably a bug, that makes things like the &ldquo;sweep&rdquo; technique I discussed above possible. If you are pressing one key, add another key, then let up on the second key, <code>keyDown</code> events stop firing. For Automadraw, this behavior enables this interaction:</p>
