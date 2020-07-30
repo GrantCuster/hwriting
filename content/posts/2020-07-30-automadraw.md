@@ -1,6 +1,6 @@
 ---
 date: 2020-07-30T10:34:10
-title: "Automadraw"
+title: "Automadraw: release notes"
 ---
 
 {{< 
@@ -33,7 +33,9 @@ title="Active environment: resize the act cursor over a large area, use the draw
 
 This set-up is uniquely suited to keyboard cursor controls, where each cursor's position is fully visible and fully predictable (versus a touch interface where you would have to use multiple fingers and the fingers themselves would obscure your view of the changes taking place). I use Vim-like keyboard controls because I honestly prefer them. My suspicion is that they may enable modes of interaction other methods do not. I was happy to find an interaction that fit them so well. I'm looking forward to seeing how even more multiple cursors feel in future experiments.
 
-([Stamp](https://stamp.constraint.systems) is a different example of the possibilities of multiple cursors: two cursors across two canvases.)
+[Stamp](https://stamp.constraint.systems) is a different example of the possibilities of multiple cursors: two cursors across two canvases.
+
+![](/images/stamp-1596133133.gif) 
 
 ## Keyboard events
 
