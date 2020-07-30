@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Writing - Grant Custer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Jul 2020 16:21:02 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2020 10:34:10 +0000</lastBuildDate>
     
 	<atom:link href="https://writing.grantcuster.com/posts/rss.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Automadraw</title>
+      <link>https://writing.grantcuster.com/posts/2020-07-30-automadraw/</link>
+      <pubDate>Thu, 30 Jul 2020 10:34:10 +0000</pubDate>
+      
+      <guid>https://writing.grantcuster.com/posts/2020-07-30-automadraw/</guid>
+      <description>Automadraw is a new app I made for my Constraint Systems project. It lets you draw and evolve your drawing using cellular automata using two keyboard controlled cursors.
+What is it for I think there are two main uses for Automadraw:
+ Get more familiar with the cellular automata (Conway&amp;rsquo;s Game of Life and Langton&amp;rsquo;s Ant) that it runs. You can quickly experiment with lots of different patterns. Draw something collaboratively with the automata.</description>
+    </item>
     
     <item>
       <title>Bushido Blade 2: a design appreciation</title>
