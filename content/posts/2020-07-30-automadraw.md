@@ -7,7 +7,7 @@ title: "Automadraw: release notes"
 figure src="/images/automadraw-1596131469.gif" 
 >}}
 
-[Automadraw](https://automadraw.constraint.systems) is a new app I made for my [Constraint Systems](https://constraint.systems) project. It lets you draw and evolve your drawing using cellular automata using two keyboard controlled cursors.
+[Automadraw](https://automadraw.constraint.systems) is a new experimental app I made for my [Constraint Systems](https://constraint.systems) project. It lets you draw and evolve your drawing using cellular automata using two keyboard controlled cursors.
 
 ## What is it for
 
