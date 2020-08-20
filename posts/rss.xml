@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Writing - Grant Custer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Jul 2020 10:34:10 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2020 08:32:35 +0000</lastBuildDate>
     
 	<atom:link href="https://writing.grantcuster.com/posts/rss.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Fantasy Consoles and Framing</title>
+      <link>https://writing.grantcuster.com/posts/2020-08-20-fantasy-consoles-and-framing/</link>
+      <pubDate>Thu, 20 Aug 2020 08:32:35 +0000</pubDate>
+      
+      <guid>https://writing.grantcuster.com/posts/2020-08-20-fantasy-consoles-and-framing/</guid>
+      <description>I&amp;rsquo;ve been thinking a lot about Joseph White&amp;rsquo;s talk on his motivations for making the PICO-8 fantasy console. There&amp;rsquo;s so much in the talk that resonates with what I&amp;rsquo;ve been thinking about for Constraint Systems: about how carefully selected constraints change the feel of working, making it feel more focused, and even cozy.
+Since viewing the talk I&amp;rsquo;ve been thinking a lot about how he frames PICO-8 with the idea of a fantasy console and cartridges, and what I could do for framing Constraint Systems.</description>
+    </item>
     
     <item>
       <title>Automadraw: release notes</title>
