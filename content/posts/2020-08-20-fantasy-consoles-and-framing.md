@@ -1,6 +1,6 @@
 ---
 date: 2020-08-20T08:32:35
-title: "Fantasy Consoles and Framing"
+title: "Fantasy consoles and framing"
 ---
 
 I've been thinking a lot about [Joseph White's talk on his motivations for making the PICO-8 fantasy console](https://www.lexaloffle.com/bbs/?tid=31634). There's so much in the talk that resonates with what I've been thinking about for [Constraint Systems](https://constraint.systems): about how carefully selected constraints change the feel of working, making it feel more focused, and even cozy.
