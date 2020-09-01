@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Writing - Grant Custer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Aug 2020 08:32:35 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2020 11:50:28 +0000</lastBuildDate>
     
 	<atom:link href="https://writing.grantcuster.com/posts/rss.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Sift: release notes</title>
+      <link>https://writing.grantcuster.com/posts/2020-09-01-sift-release-notes/</link>
+      <pubDate>Tue, 01 Sep 2020 11:50:28 +0000</pubDate>
+      
+      <guid>https://writing.grantcuster.com/posts/2020-09-01-sift-release-notes/</guid>
+      <description>Sift is an experimental image editor that slices an image into layers. You can offset the layers to produce interference patterns and pseudo-3D effects. It uses an additive blending mode and pixel-based light splitting algorithm.
+Origins I started planning Sift while standing in the ocean, thinking about waves and how to use a wave effect on the pixels of an image. I&amp;rsquo;ve gotten used to thinking of images as a grid of pixels, and I&amp;rsquo;ve done some experiments using HTML canvas and javascript to move, or even flow, pixels around.</description>
+    </item>
     
     <item>
       <title>Fantasy consoles and framing</title>
