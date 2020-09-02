@@ -15,18 +15,16 @@
 
 {{ define "main" }}
  <div class="container">
-   <div>Writing</div> 
-      <div>Latest posts</div>
+   <div style="font-weight: bold;">Writing</div> 
       {{ range $index, $element := where .Site.RegularPages.ByDate.Reverse "Section" "posts" }}
       {{ $number := sub (len .Site.RegularPages) $index}}
       <div style="padding-left: 2ch; text-indent: -2ch;">
-        {{ .Date.Format "2006.01.02" }} <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <span class="jbm">{{ .Date.Format "2006.01.02" }}</span> <a href="{{ .RelPermalink }}" style="font-weight: bold;">{{ .Title }}</a>
       </div>
       {{ end }}
       <div class="spacer"></div>
-      <div>***</div>
+      <hr />
       <div class="spacer"></div>
- 
       {{ range $index, $element := where .Site.RegularPages.ByDate.Reverse "Section" "posts" }}
       {{ $number := sub (len .Site.RegularPages) $index}}
       <div class="post">
@@ -35,6 +33,7 @@
         <div>{{ .Content }}</div>
         <div><a href="{{ .RelPermalink }}">Permalink</a></div>
         <div class="spacer"></div>
+        <hr />
         <div class="spacer"></div>
       </div>
       {{ end }}
