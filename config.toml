@@ -11,4 +11,6 @@ title = "Writing - Grant Custer"
   [markup.highlight]
     lineNumbersInTable = true
     style = "bw"
+  [markup.goldmark.renderer]
+    unsafe = true
 
