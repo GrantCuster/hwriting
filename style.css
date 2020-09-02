@@ -134,3 +134,10 @@ pre code {
   margin: 0;
   text-indent: 2ch;
 }
+hr {
+  height: 2px;
+  background: #aaa;
+  border: none;
+  margin-top: -1px;
+  margin-bottom: -1px;
+}
