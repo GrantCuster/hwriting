@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Writing - Grant Custer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Sep 2020 11:50:28 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2020 12:09:04 +0000</lastBuildDate>
     
 	<atom:link href="https://writing.grantcuster.com/posts/rss.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The benefits of limitations in application launchers</title>
+      <link>https://writing.grantcuster.com/posts/2020-09-12-the-benefits-of-limitations-in-application-launchers/</link>
+      <pubDate>Sat, 12 Sep 2020 12:09:04 +0000</pubDate>
+      
+      <guid>https://writing.grantcuster.com/posts/2020-09-12-the-benefits-of-limitations-in-application-launchers/</guid>
+      <description>In my Linux set-up, I use dmenu as an application launcher. dmenu is basically autocomplete for applications and scripts. In many ways, it&amp;rsquo;s not so different from launching things using Spotlight on a Mac.
+  Opening 750words.com with dmenu and a launcher script.   Since I started using it, dmenu has been a convenient way to launch apps. But I&amp;rsquo;ve only recently started to realize some of the interesting things it makes possible.</description>
+    </item>
     
     <item>
       <title>Sift: release notes</title>
