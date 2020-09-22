@@ -6,10 +6,20 @@
     <description>Recent content on Writing - Grant Custer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 Sep 2020 12:09:04 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2020 11:53:03 +0000</lastBuildDate>
     
 	<atom:link href="https://writing.grantcuster.com/rss.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tile: release notes</title>
+      <link>https://writing.grantcuster.com/posts/2020-09-16-tile-release-notes/</link>
+      <pubDate>Mon, 21 Sep 2020 11:53:03 +0000</pubDate>
+      
+      <guid>https://writing.grantcuster.com/posts/2020-09-16-tile-release-notes/</guid>
+      <description>Tile is an experimental image editor that lets you layout images using a tiling tree layout. You can move, split, and resize images using keyboard controls.
+Motivation 1. Tiling window managers I&amp;rsquo;ve been using the tiling window mananger i3wm for around six months now. For my purposes, tiling windows are a much better and more intuitive experience than the dominant &amp;ldquo;floating windows&amp;rdquo; desktop metaphor. A big part of the motivation for making tile was wanting to dive in and explore how tiling logic works at the code level.</description>
+    </item>
     
     <item>
       <title>The benefits of limitations in application launchers</title>
