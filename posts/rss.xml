@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Writing - Grant Custer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Sep 2020 11:53:03 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2020 11:40:31 +0000</lastBuildDate>
     
 	<atom:link href="https://writing.grantcuster.com/posts/rss.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tri: release notes</title>
+      <link>https://writing.grantcuster.com/posts/2020-10-06-tri-release-notes/</link>
+      <pubDate>Tue, 06 Oct 2020 11:40:31 +0000</pubDate>
+      
+      <guid>https://writing.grantcuster.com/posts/2020-10-06-tri-release-notes/</guid>
+      <description>Tri is an experimental image distorter. You can choose an image to render using a WebGL quad, adjust the texture and position coordinates to create different distortions, and save the result.
+Understanding WebGL textures Tri is a direct result of my attempts to understand how texture mapping works in WebGL. I&amp;rsquo;ve used WebGL (by way of Three.js) in several projects, but I&amp;rsquo;ve never felt confident in my understanding of how it worked.</description>
+    </item>
     
     <item>
       <title>Tile: release notes</title>
