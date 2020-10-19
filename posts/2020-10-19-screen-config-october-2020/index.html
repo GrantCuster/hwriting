@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+    <link rel="stylesheet" type="text/css" href="/font.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    
+
+
+<title>Screen config: October 2020 - Grant Custer</title>
+<meta property="description" content="My current set-up and some of the thinking behind it.
+  A photo of the current set-up.   Equipment Screens:
+ 1920x1200 monitor 1920x1200 monitor 1920x1080 portable monitor 1920x1080 laptop screen  Computers
+ Intel NUC Razer Blade Stealth  Set-up Vertical monitors I&rsquo;ve put both the desktop monitors in vertical orientation, like an open book (or a huge Surface Duo). I think for doing text-based work on the computer (code or writing) this is the ideal set-up.">
+<meta property="og:title" content="Screen config: October 2020 - Grant Custer">
+<meta property="og:description" content="My current set-up and some of the thinking behind it.
+  A photo of the current set-up.   Equipment Screens:
+ 1920x1200 monitor 1920x1200 monitor 1920x1080 portable monitor 1920x1080 laptop screen  Computers
+ Intel NUC Razer Blade Stealth  Set-up Vertical monitors I&rsquo;ve put both the desktop monitors in vertical orientation, like an open book (or a huge Surface Duo). I think for doing text-based work on the computer (code or writing) this is the ideal set-up.">
+<meta property="og:image" content="https://writing.grantcuster.com/writing.png">
+<meta property="og:url" content="https://writing.grantcuster.com/posts/2020-10-19-screen-config-october-2020/">
+<meta property="twitter:card" content="summary_large_image">
+
+  </head>
+  <body>
+   <div class="hspacer"></div>
+    <div class="container">
+      <div class="jbm">
+      <div>Grant Custer</div>
+      <div><p style="margin: 0; text-indent: 2ch"><a href="https://feed.grantcuster.com">Feed</a>&nbsp; <a href="https://grantcuster.com">Index</a>&nbsp; <a href="https://twitter.com/grantcuster">Twitter</a></p></div>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    
+<div class="container">
+  <div><a href="/">Writing</a></div>
+  <div class="jbm">2020.10.19</div>
+  <h1>Screen config: October 2020</h1>
+  <div><p>My current set-up and some of the thinking behind it.</p>
+<figure>
+    <img src="/images/IMG_1401-1603119703.jpeg"/> <figcaption>
+            <h4>A photo of the current set-up.</h4>
+        </figcaption>
+</figure>
+
+<h2 id="equipment">Equipment</h2>
+<p>Screens:</p>
+<ul>
+<li>1920x1200 monitor</li>
+<li>1920x1200 monitor</li>
+<li>1920x1080 portable monitor</li>
+<li>1920x1080 laptop screen</li>
+</ul>
+<p>Computers</p>
+<ul>
+<li>Intel NUC</li>
+<li>Razer Blade Stealth</li>
+</ul>
+<h2 id="set-up">Set-up</h2>
+<h3 id="vertical-monitors">Vertical monitors</h3>
+<p>I&rsquo;ve put both the desktop monitors in vertical orientation, like an open book (or a huge Surface Duo). I think for doing text-based work on the computer (code or writing) this is the ideal set-up. It&rsquo;s really nice they&rsquo;re both the 16:10 resolution (instead of the increasingly popular 16:9). 1200 pixels across is a comfy amount of horizontal space for writing.</p>
+<h3 id="laptop1-for-rendering">Laptop+1 for rendering</h3>
+<p>Mostly I develop things seen in a web browser. I figured out I could use my laptop screen as a web browser preview device. Especially since it&rsquo;s aspect ratio is a more common size then a split on my vertical monitor. This set-up is also conceptually pleasing. It feels like all the dev work is happening on these two utilitarian vertical monitors, and then it is rendered out on the laptop device (which, among other things, has denser pixels).</p>
+<p>I also have a portable monitor (same resolution as the laptop), that I got when I was doing everything (often in the backyard) on the laptop. I&rsquo;m using that as a secondary rendering screen. Often I have the terminal running the local dev server on there (just to keep an eye on it). Sometimes I have a video or music player. I&rsquo;m still working out what feels best there. I also like having a todo list always visible.</p>
+<h3 id="powering-the-monitors">Powering the monitors</h3>
+<p>This has been a journey. At first I was running everything off the laptop with a dock that used DisplayLink to power the three extra monitors. DisplayLink, despite what looks like heroic effort on the part of open source devs, is pretty buggy on Ubuntu. It worked but it was consuming a lot of CPU and often crashing.</p>
+<p>I&rsquo;d never really thought hard about what it takes to drive a bunch of monitors. I knew more pixels required more effort, but I thought that since my monitors are relatively low resolution (less in total than a 4k), I&rsquo;d be OK. But it turns out there&rsquo;s also just the matter of having enough ports, which my laptop does not. DisplayLink solved the port issue but just wasn&rsquo;t working that well.</p>
+<p>Instead, I&rsquo;m now running the two vertical monitors off an Intel NUC, through the provided ports. The laptop runs itself and also the external portable display. I run <a href="https://flathub.org/apps/details/com.github.debauchee.barrier">Barrier</a> to use my mouse and keyboard across both computers. It&rsquo;s early days, but it has been extremely surprising to me how well this works. There is noticeable lag on the keyboard/mouse sometimes. But I&rsquo;m not actually on the laptop that much &ndash; as I mentioned I usually use it render web previews and play videos or music. Things I have to get set-up and occasionally refresh but am not doing a lot of work in.</p>
+<h3 id="os-and-networking">OS and networking</h3>
+<p>Part of the reason mouse and keyboard sharing feels as good as it does is that I have my desktop and laptop similarly configured. I&rsquo;ll write more in-depth about it another time, but I&rsquo;m running i3wm on both, which makes for a great multi-monitor experience. It will probably be a bit of a pain to keep their configs in sync (I&rsquo;m investigating ways to do it). But it will also will force me to have portable Linux configs in general, which will come in handy if I have to wipe one of them or set-up a new machine at some point.</p>
+<p>Compared to other Linux workflow topics, I&rsquo;ve found less info on a multi-machine set-up. Part of it is just about networking, which it seems like a lot of the Linux blogs assume you already know how to do <code>ssh</code> and <code>sftp</code> stuff. I&rsquo;m learning, but still trying to get a handle on the big picture of what is possible. I think I want to run most things off the desktop. Which I can do in terms of <code>ssh</code>ing from the laptop (although when they&rsquo;re all connected that does get me into a weird situation where I&rsquo;m sending keyboard and mouse commands through Barrier from the desktop to the laptop, then running those commands through the laptop in a desktop terminal session&hellip;). Right now, I&rsquo;m thinking I want to mostly share files from the desktop, so it almost becomes a NAS. Then I could do stuff like take the laptop somewhere else in the house and write code and save it back directly to the desktop, so that for code I&rsquo;m working on the desktop copy is the soure of truth.</p>
+<h3 id="local-dev-server">Local dev server</h3>
+<p>I use a node module called <code>reload</code> to run a local server for web apps I&rsquo;m developing. It watches the directly and automatically reloads the page on changing. I was pleased to discover this worked exactly the same way if I loaded the IP address from my desktop on to my laptop screen. This really makes the &ldquo;laptop as render screen&rdquo; work smoothly.</p>
+<p>I sometimes daydream about displaying my in-progress work to people passing by. This process made me realize I could do that relatively easier with another screen + computer (possibly a Raspberry Pi) directed at that local dev server.</p>
+</div>
+  <div class="hspacer"></div>
+  <div><a href="/">More writing</a></div>
+  <div class="spacer"></div>
+  <div class="hspacer"></div>
+</div>
+
+    <div class="container indent">
+      <div class="jbm">
+     <div>About</div>
+      <p>Grant Custer is a designer-programmer interested in alternative interfaces.</p>
+      <p>You can see work and inspiration in progress on my <a href="https://feed.grantcuster.com">Feed</a>  and my alternative interface experiments on <a href="https://constraint.systems">Constraint Systems</a>. I also design and build prototypes for <a href="https://blog.fastforwardlabs.com">Cloudera Fast Forward</a>. I’m happy to talk on <a href="https://twitter.com/grantcuster">Twitter</a>, email: grantcuster at gmail dot com, or <a href="https://vis.social/@grantcuster">Mastodon</a>. You can see a full list of projects on my <a href="https://grantcuster.com">Index</a>.</p>
+      </p>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+  </body>
+</html>
