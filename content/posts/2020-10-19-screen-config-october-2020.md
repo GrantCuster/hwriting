@@ -18,7 +18,7 @@ Screens:
 - 1920x1080 portable monitor
 - 1920x1080 laptop screen
 
-Computers
+Computers:
 - Intel NUC
 - Razer Blade Stealth
 
