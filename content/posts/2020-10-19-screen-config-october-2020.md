@@ -26,11 +26,11 @@ Computers
 
 ### Vertical monitors
 
-I've put both the desktop monitors in vertical orientation, like an open book (or a huge Surface Duo). I think for doing text-based work on the computer (code or writing) this is the ideal set-up. It's really nice they're both the 16:10 resolution (instead of the increasingly popular 16:9). 1200 pixels across is a comfy amount of horizontal space for writing. 
+I've put both the desktop monitors in vertical orientation, like an open book (or a huge Surface Duo). I think for doing text-based work on the computer (code or writing) this is the ideal set-up. It's really nice they're both the 16:10 resolution (instead of the increasingly popular 16:9). 1200 pixels across is a comfy amount of horizontal space for writing. These monitors run off the Intel NUC.
 
 ### Laptop+1 for rendering
 
-Mostly I develop things seen in a web browser. I figured out I could use my laptop screen as a web browser preview device. Especially since it's aspect ratio is a more common size then a split on my vertical monitor. This set-up is also conceptually pleasing. It feels like all the dev work is happening on these two utilitarian vertical monitors, and then it is rendered out on the laptop device (which, among other things, has denser pixels).
+Mostly I develop things seen in a web browser. I figured out I could use my laptop screen as a web browser preview device. Especially since its aspect ratio is a more common size then a split on my vertical monitor. This set-up is also conceptually pleasing. It feels like all the dev work is happening on these two utilitarian vertical monitors, and then it is rendered out on the laptop device (which, among other things, has denser pixels).
 
 I also have a portable monitor (same resolution as the laptop), that I got when I was doing everything (often in the backyard) on the laptop. I'm using that as a secondary rendering screen. Often I have the terminal running the local dev server on there (just to keep an eye on it). Sometimes I have a video or music player. I'm still working out what feels best there. I also like having a todo list always visible.
 
