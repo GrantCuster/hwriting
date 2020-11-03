@@ -6,10 +6,19 @@
     <description>Recent content on Writing - Grant Custer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Oct 2020 10:27:45 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2020 10:50:29 +0000</lastBuildDate>
     
 	<atom:link href="https://writing.grantcuster.com/rss.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>WegGL, 3D projection and mental models</title>
+      <link>https://writing.grantcuster.com/posts/2020-11-03-webgl-perspective-projection-and-mental-models/</link>
+      <pubDate>Tue, 03 Nov 2020 10:50:29 +0000</pubDate>
+      
+      <guid>https://writing.grantcuster.com/posts/2020-11-03-webgl-perspective-projection-and-mental-models/</guid>
+      <description>I&amp;rsquo;m working on recreating some graphics editing programs in WebGL. To be able to zoom in on images, I&amp;rsquo;ve implemented a pretty standard 3D camera with projection and view matrices. I&amp;rsquo;ve found really understanding projection to be difficult. It&amp;rsquo;s one thing to get some cubes placed and rendering in the world, it&amp;rsquo;s another thing to enable mouse interactions, where you have to project and unproject between screen space, view space and world space.</description>
+    </item>
     
     <item>
       <title>Screen config: October 2020</title>
