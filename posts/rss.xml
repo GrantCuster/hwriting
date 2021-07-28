@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Writing - Grant Custer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Nov 2020 10:50:29 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Jul 2021 09:31:35 +0000</lastBuildDate>
     
 	<atom:link href="https://writing.grantcuster.com/posts/rss.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Seams and possibilities: software programming and DIY furniture</title>
+      <link>https://writing.grantcuster.com/posts/2021-07-28-seams-and-possibilities/</link>
+      <pubDate>Wed, 28 Jul 2021 09:31:35 +0000</pubDate>
+      
+      <guid>https://writing.grantcuster.com/posts/2021-07-28-seams-and-possibilities/</guid>
+      <description>okay, to start, an analogy: long ago, a sing le person could build the best video game that existed. Adventure didn&amp;rsquo;t require 200 developers and 18 months to get out the door. as technology improved, so did expectations. Adventure was my goal. Today&amp;rsquo;s kids&amp;rsquo; goal is fortnite. —@steveklabnik
+ One of the things I keep coming back to is the value of visible seams. The idea that you can look at something and develop a mental model of how it works or how it is made.</description>
+    </item>
     
     <item>
       <title>WegGL, 3D projection and mental models</title>
