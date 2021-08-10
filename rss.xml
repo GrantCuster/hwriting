@@ -6,10 +6,20 @@
     <description>Recent content on Writing - Grant Custer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Aug 2021 16:45:01 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Aug 2021 09:25:43 +0000</lastBuildDate>
     
 	<atom:link href="https://writing.grantcuster.com/rss.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Computer lab: an idea for an art installation for software development</title>
+      <link>https://writing.grantcuster.com/posts/2021-08-10-computer-lab-an-idea-for-an-art-installation-for-software-development/</link>
+      <pubDate>Tue, 10 Aug 2021 09:25:43 +0000</pubDate>
+      
+      <guid>https://writing.grantcuster.com/posts/2021-08-10-computer-lab-an-idea-for-an-art-installation-for-software-development/</guid>
+      <description>The idea Get a storefront, split it into a front half and a back half. Put six computers in each half. The front half is free for anyone to come and use. The catch is that the free-to-use computers only run the software made in the lab by the in-residence developers that work in the back half.
+Things to consider What level of abstraction What do you want to be the base of the computers in the front half?</description>
+    </item>
     
     <item>
       <title>Screenshot vs artwork: games vs creative tools</title>
