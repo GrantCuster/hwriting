@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+    <link rel="stylesheet" type="text/css" href="/font.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    
+
+
+<title>State of mind: scattered thoughs on Typescript, three.js, and class-based architecture - Grant Custer</title>
+<meta property="description" content="I&rsquo;m possibly in the midst of revising a bunch of my assumptions about how I like to code projects, so I wanted to write down my current thoughts. I&rsquo;m probably in a honeymoon phase with the new set-up, so it&rsquo;s possible as I work longer I&rsquo;ll run into a bunch of walls and complications and end up re-revising.
+Typescript I have been avoiding trying Typescript, but I&rsquo;ve now seen too much work from people working on involved interfaces (mainly Steve Ruiz&rsquo;s work and the Excalidraw project) to justify not at least trying it.">
+<meta property="og:title" content="State of mind: scattered thoughs on Typescript, three.js, and class-based architecture - Grant Custer">
+<meta property="og:description" content="I&rsquo;m possibly in the midst of revising a bunch of my assumptions about how I like to code projects, so I wanted to write down my current thoughts. I&rsquo;m probably in a honeymoon phase with the new set-up, so it&rsquo;s possible as I work longer I&rsquo;ll run into a bunch of walls and complications and end up re-revising.
+Typescript I have been avoiding trying Typescript, but I&rsquo;ve now seen too much work from people working on involved interfaces (mainly Steve Ruiz&rsquo;s work and the Excalidraw project) to justify not at least trying it.">
+<meta property="og:image" content="https://writing.grantcuster.com/writing.png">
+<meta property="og:url" content="https://writing.grantcuster.com/posts/2021-08-26-state-of-mind-scattered-thoughs-on-typescript-three-js-and-class-based-architecture/">
+<meta property="twitter:card" content="summary_large_image">
+
+  </head>
+  <body>
+   <div class="hspacer"></div>
+    <div class="container">
+      <div class="jbm">
+      <div>Grant Custer</div>
+      <div><p style="margin: 0; text-indent: 2ch"><a href="https://feed.grantcuster.com">Feed</a>&nbsp; <a href="https://grantcuster.com">Index</a>&nbsp; <a href="https://twitter.com/grantcuster">Twitter</a></p></div>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    
+<div class="container">
+  <div><a href="/">Writing</a></div>
+  <div class="jbm">2021.08.26</div>
+  <h1>State of mind: scattered thoughs on Typescript, three.js, and class-based architecture</h1>
+  <div><p>I&rsquo;m possibly in the midst of revising a bunch of my assumptions about how I like to code projects, so I wanted to write down my current thoughts. I&rsquo;m probably in a honeymoon phase with the new set-up, so it&rsquo;s possible as I work longer I&rsquo;ll run into a bunch of walls and complications and end up re-revising.</p>
+<h2 id="typescript">Typescript</h2>
+<p>I have been avoiding trying Typescript, but I&rsquo;ve now seen too much work from people working on involved interfaces (mainly Steve Ruiz&rsquo;s work and the Excalidraw project) to justify not at least trying it. So I&rsquo;ve been trying it on the new prototype and I think I like it. Barring running into some tremendous catch, I think I&rsquo;ll use it from here on out.</p>
+<h2 id="combined-with-threejs">Combined with three.js</h2>
+<p>I think a part of why I was prepared for Typescript was because I&rsquo;ve been using three.js a lot lately and gotten increasingly used to it&rsquo;s class based architecture for things like meshes and vectors. I got a lot more interested in the possibilities of Typescript when I realized it could help me create classes (or extend existing ones) to augment three.js with capabilities purpose-built for my project. The boundary between the library code and my code feels less set, which feels powerful to me.</p>
+<h2 id="moving-away-from-the-dom">Moving away from the DOM</h2>
+<p>Another contributing factor is that since the project I&rsquo;m working out is all in WebGL world, I don&rsquo;t have the DOM to organize around. Which has made organization using things like classes more important. I wouldn&rsquo;t say it&rsquo;s an easy process, but rebuilding some of the things (like mouse over events) built into the DOM has been a good exercise in realizing that nothing is magic, and that the methods behind this kind of thing are approachable. I think it&rsquo;s also clarifying for me why things like the DOM and the javascript API are built the way they are. Decisions that seemed impenetrable before are now being revealed as a way to strike a balance between flexibility and organizational clarity.</p>
+</div>
+  <div class="hspacer"></div>
+  <div><a href="/">More writing</a></div>
+  <div class="spacer"></div>
+  <div class="hspacer"></div>
+</div>
+
+    <div class="container indent">
+      <div class="jbm">
+     <div>About</div>
+      <p>Grant Custer is a designer-programmer interested in alternative interfaces.</p>
+      <p>You can see work and inspiration in progress on my <a href="https://feed.grantcuster.com">Feed</a>  and my alternative interface experiments on <a href="https://constraint.systems">Constraint Systems</a>. I’m happy to talk on <a href="https://twitter.com/grantcuster">Twitter</a>, email: grantcuster at gmail dot com, or <a href="https://vis.social/@grantcuster">Mastodon</a>. You can see a full list of projects on my <a href="https://grantcuster.com">Index</a>.</p>
+      </p>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+  </body>
+</html>

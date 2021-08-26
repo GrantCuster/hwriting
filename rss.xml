@@ -6,10 +6,20 @@
     <description>Recent content on Writing - Grant Custer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Aug 2021 09:25:43 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Aug 2021 14:40:43 +0000</lastBuildDate>
     
 	<atom:link href="https://writing.grantcuster.com/rss.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>State of mind: scattered thoughs on Typescript, three.js, and class-based architecture</title>
+      <link>https://writing.grantcuster.com/posts/2021-08-26-state-of-mind-scattered-thoughs-on-typescript-three-js-and-class-based-architecture/</link>
+      <pubDate>Thu, 26 Aug 2021 14:40:43 +0000</pubDate>
+      
+      <guid>https://writing.grantcuster.com/posts/2021-08-26-state-of-mind-scattered-thoughs-on-typescript-three-js-and-class-based-architecture/</guid>
+      <description>I&amp;rsquo;m possibly in the midst of revising a bunch of my assumptions about how I like to code projects, so I wanted to write down my current thoughts. I&amp;rsquo;m probably in a honeymoon phase with the new set-up, so it&amp;rsquo;s possible as I work longer I&amp;rsquo;ll run into a bunch of walls and complications and end up re-revising.
+Typescript I have been avoiding trying Typescript, but I&amp;rsquo;ve now seen too much work from people working on involved interfaces (mainly Steve Ruiz&amp;rsquo;s work and the Excalidraw project) to justify not at least trying it.</description>
+    </item>
     
     <item>
       <title>Computer lab: an idea for an art installation for software development</title>
