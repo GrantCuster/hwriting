@@ -6,10 +6,20 @@
     <description>Recent content on Writing - Grant Custer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Aug 2021 14:40:43 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Sep 2021 10:11:06 +0000</lastBuildDate>
     
 	<atom:link href="https://writing.grantcuster.com/rss.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Towards more manageable pointer events</title>
+      <link>https://writing.grantcuster.com/posts/2021-09-15-towards-more-manageable-pointer-events/</link>
+      <pubDate>Wed, 15 Sep 2021 10:11:06 +0000</pubDate>
+      
+      <guid>https://writing.grantcuster.com/posts/2021-09-15-towards-more-manageable-pointer-events/</guid>
+      <description>Working with mouse and touch events is one of the biggest challenges for me in making interactive web apps. The availability of pointer events helps a lot, but I still pretty quickly end up with a mess of conditionals that are hard to reason about. I&amp;rsquo;m working on some new strategies and abstractions to help with this.
+PointerOne, PointerTwo, PointerThree The pointer event API provides events for pointerDown, pointerMove, and pointerUp.</description>
+    </item>
     
     <item>
       <title>State of mind: scattered thoughs on Typescript, three.js, and class-based architecture</title>

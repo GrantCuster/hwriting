@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+    <link rel="stylesheet" type="text/css" href="/font.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    
+
+
+<title>Towards more manageable pointer events - Grant Custer</title>
+<meta property="description" content="Working with mouse and touch events is one of the biggest challenges for me in making interactive web apps. The availability of pointer events helps a lot, but I still pretty quickly end up with a mess of conditionals that are hard to reason about. I&rsquo;m working on some new strategies and abstractions to help with this.
+PointerOne, PointerTwo, PointerThree The pointer event API provides events for pointerDown, pointerMove, and pointerUp.">
+<meta property="og:title" content="Towards more manageable pointer events - Grant Custer">
+<meta property="og:description" content="Working with mouse and touch events is one of the biggest challenges for me in making interactive web apps. The availability of pointer events helps a lot, but I still pretty quickly end up with a mess of conditionals that are hard to reason about. I&rsquo;m working on some new strategies and abstractions to help with this.
+PointerOne, PointerTwo, PointerThree The pointer event API provides events for pointerDown, pointerMove, and pointerUp.">
+<meta property="og:image" content="https://writing.grantcuster.com/writing.png">
+<meta property="og:url" content="https://writing.grantcuster.com/posts/2021-09-15-towards-more-manageable-pointer-events/">
+<meta property="twitter:card" content="summary_large_image">
+
+  </head>
+  <body>
+   <div class="hspacer"></div>
+    <div class="container">
+      <div class="jbm">
+      <div>Grant Custer</div>
+      <div><p style="margin: 0; text-indent: 2ch"><a href="https://feed.grantcuster.com">Feed</a>&nbsp; <a href="https://grantcuster.com">Index</a>&nbsp; <a href="https://twitter.com/grantcuster">Twitter</a></p></div>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    
+<div class="container">
+  <div><a href="/">Writing</a></div>
+  <div class="jbm">2021.09.15</div>
+  <h1>Towards more manageable pointer events</h1>
+  <div><p>Working with mouse and touch events is one of the biggest challenges for me in making interactive web apps. The availability of <a href="https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events">pointer events</a> helps a lot, but I still pretty quickly end up with a mess of conditionals that are hard to reason about. I&rsquo;m working on some new strategies and abstractions to help with this.</p>
+<h2 id="pointerone-pointertwo-pointerthree">PointerOne, PointerTwo, PointerThree</h2>
+<p>The pointer event API provides events for <code>pointerDown</code>, <code>pointerMove</code>, and <code>pointerUp</code>. Using the <code>pointerId</code> provided you can link those events together into a continuous Pointer object that contains the whole lifecycle. I put this together into a <code>SubPointer</code> class.</p>
+<p>The <code>SubPointer</code>'s feed into another level of abstraction, based on how many active touches there are: <code>PointerOne</code>, <code>PointerTwo</code>, and <code>PointerThree</code>. This is meant to match how I think about these actions (&ldquo;I want to do this when the user has two fingers down&rdquo;). All of them feature fields for the <code>initial</code> and <code>current</code> pointer position. I use those values for things like drag (pan the canvas based on the distance between <code>current</code> and <code>initial</code>).</p>
+<p>You can see code and a very barebones demo of this approach at <a href="https://github.com/GrantCuster/pointy">https://github.com/GrantCuster/pointy</a>.</p>
+<h3 id="averaging-pointers">Averaging pointers</h3>
+<p>Something I formalized in this set-up is the idea of average pointers. When two fingers are down I average their position to get the midpoint between them (same for three). This makes a lot of actions, like moving the canvas on two-finger drag and rotating the camera on three-finger drag, more straightforward to code. I can mostly just feed in the values from the average Pointer.</p>
+<h3 id="managing-lifecycles">Managing lifecycles</h3>
+<p>The separate pointer abstraction also helps me think more clearly about pointer continuity. When you add a second touch, the already-active first touch continues. But I think you generally want to throw away that first touch, and &lsquo;start from scratch&rsquo; with a new two-touch event. An example touch setup:</p>
+<ol>
+<li>One-finger drag: draw an area select</li>
+<li>Two-finger drag: pan the canvas</li>
+</ol>
+<p>In this case when you move from one-finger to two-finger you want to end or cancel the one-finger drag action, and in terms of dragging, you want to reset the initial value to an average of both pointers&rsquo; current location. I work this out in the <code>SubPointer</code> class so that the <code>PointerOne</code> and <code>PointerTwo</code> behavior is exactly what I expect. Basically anytime the number of touches switch it ends the current Pointer and starts the new one. The logic in <code>SubPointer</code> still gets kind of gnarly but at least it&rsquo;s contained there. Overall I like the behavior of having a higher set of abstractions that, for my purposes &lsquo;just work&rsquo;, powered by a lower set of abstractions that I can dip into when I need to.</p>
+<h2 id="keyboard-mouse-buttons">Keyboard mouse buttons</h2>
+<p>Another big driver of complexity in my input management is keyboard events and modifiers. Modifying the pointer behavior based on a pressed key is often intuitive to the user but will snarl your pointer handling code quickly.</p>
+<p>I&rsquo;m experimenting with an approach based on how the pointer events work. The trick here again turns out to be about managing lifecycles.</p>
+<p>If you have a key that modifies pointer behavior you need to think about how you&rsquo;re going to handle a user starting a pointer event then pressing the key, then unpressing the key, all while the touch is still active. I decided to just &lsquo;interrupt&rsquo; the current touch behavior and restart it. That way I only need to check for the relevant keypress on <code>PointerOne</code>'s start and move events. My conditionals in those events are still growing larger than I&rsquo;d like, but at least they&rsquo;re contained and easier to reason about.</p>
+<p>In effect this approach is turning key presses into <code>pointerDown</code> (and <code>pointerUp</code>) events. It&rsquo;s early days but so far this approach has it made it much easier for me to reason about key and pointer combos.</p>
+</div>
+  <div class="hspacer"></div>
+  <div><a href="/">More writing</a></div>
+  <div class="spacer"></div>
+  <div class="hspacer"></div>
+</div>
+
+    <div class="container indent">
+      <div class="jbm">
+     <div>About</div>
+      <p>Grant Custer is a designer-programmer interested in alternative interfaces.</p>
+      <p>You can see work and inspiration in progress on my <a href="https://feed.grantcuster.com">Feed</a>  and my alternative interface experiments on <a href="https://constraint.systems">Constraint Systems</a>. I’m happy to talk on <a href="https://twitter.com/grantcuster">Twitter</a>, email: grantcuster at gmail dot com, or <a href="https://vis.social/@grantcuster">Mastodon</a>. You can see a full list of projects on my <a href="https://grantcuster.com">Index</a>.</p>
+      </p>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+  </body>
+</html>
