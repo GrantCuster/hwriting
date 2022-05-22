@@ -6,10 +6,21 @@
     <description>Recent content on Writing - Grant Custer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Sep 2021 10:11:06 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 May 2022 09:58:24 +0000</lastBuildDate>
     
 	<atom:link href="https://writing.grantcuster.com/rss.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CSS: end-user styling possibilities</title>
+      <link>https://writing.grantcuster.com/posts/2022-05-22-css-as-end/</link>
+      <pubDate>Sun, 22 May 2022 09:58:24 +0000</pubDate>
+      
+      <guid>https://writing.grantcuster.com/posts/2022-05-22-css-as-end/</guid>
+      <description>I&amp;rsquo;m excited about CSS again. After experimenting with making layout-from-scratch apps with WebGL/Three.js in an attempt to avoid the sprawl (and creating my own mini-sprawl in the process) I&amp;rsquo;m rethinking approaches.
+I&amp;rsquo;m interested making applications where users customize with their own CSS. My bet is that if we get the initial primitives right, this could allow users to truly customize and feel at home in their spaces.
+Benefits What do you get from letting users directly write CSS in the application:</description>
+    </item>
     
     <item>
       <title>Towards more manageable pointer events</title>
