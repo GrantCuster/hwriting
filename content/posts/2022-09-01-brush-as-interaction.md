@@ -7,7 +7,7 @@ How do you change things?
 
 I'm interested in users having the ability to personalize websites. I've mainly thought about it as a case for UI that lets you choose different options, probably powered by CSS (see components.ai's [CSS.GUI](https://components.ai/css-gui)).
 
-My [CSS Paint](https://css-paint.constraint.systems) projecct lets you use a brush. It's interesting to use a brush. Should we let people style their website using a brush to paint styles on to divs?
+My [CSS Paint](https://css-paint.constraint.systems) project lets you use a brush. It's interesting to use a brush. Should we let people style their website using a brush to paint styles on to divs?
 
 What out there is like a brush? There is the browser dev tools' element picker. The element picker is almost like a 2-step brush where you first select the element and then you edit it by way of CSS. With a brush you set the CSS then you target the elements.
 
