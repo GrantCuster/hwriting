@@ -21,7 +21,7 @@ If I think about being able to "paint divs" to style a website one practical con
 
 ### Layout shifts
 
-CSS does such a wide range of things, some of them, like flex layout, when applied directly with a brush may be jarring in their results. Maybe you need to limit some of the properties, or maybe you can add hints to the transformations (or even some sort of diff view?) that make what's happening more apparent.
+CSS does such a wide range of things, some of them, like changing layout, when applied directly with a brush may be jarring in their results. Maybe you need to limit some of the properties, or maybe you can add hints to the transformations (or even some sort of diff view?) that make what's happening more apparent.
 
 ## Connections to atomic CSS / Tailwind
 
