@@ -13,10 +13,10 @@
     
     <item>
       <title>Brush as interaction</title>
-      <link>https://writing.grantcuster.com/posts/2022-09-01-what-is-a-digital-brush/</link>
+      <link>https://writing.grantcuster.com/posts/2022-09-01-brush-as-interaction/</link>
       <pubDate>Thu, 01 Sep 2022 09:58:24 +0000</pubDate>
       
-      <guid>https://writing.grantcuster.com/posts/2022-09-01-what-is-a-digital-brush/</guid>
+      <guid>https://writing.grantcuster.com/posts/2022-09-01-brush-as-interaction/</guid>
       <description>How do you change things?
 I&amp;rsquo;m interested in users having the ability to personalize websites. I&amp;rsquo;ve mainly thought about it as a case for UI that lets you choose different options, probably powered by CSS (see components.ai&amp;rsquo;s CSS.GUI).
 My CSS Paint projecct lets you use a brush. It&amp;rsquo;s interesting to use a brush. Should we let people style their website using a brush to paint styles on to divs?
