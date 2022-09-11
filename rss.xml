@@ -6,17 +6,27 @@
     <description>Recent content on Writing - Grant Custer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Sep 2022 09:58:24 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 11 Sep 2022 15:22:42 +0000</lastBuildDate>
     
 	<atom:link href="https://writing.grantcuster.com/rss.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Lessons from Tailwind</title>
+      <link>https://writing.grantcuster.com/posts/2022-09-11-lessons-from-tailwind/</link>
+      <pubDate>Sun, 11 Sep 2022 15:22:42 +0000</pubDate>
+      
+      <guid>https://writing.grantcuster.com/posts/2022-09-11-lessons-from-tailwind/</guid>
+      <description>Tailwind gives you a bunch of utility classNames to write CSS with. I&amp;rsquo;ve been loving prototyping with it, and I&amp;rsquo;m interested in why, because it&amp;rsquo;s ideas often feel counterintuitive.
+Benefits Pragmatism Tailwind gives you a lot of utility classes for things I might have just wrote in inline styles. I think the selection of available classes for things like padding and margins is very pragmatic. They could have tried to limit further in the name of consistency but you can get most of the intervals you want.</description>
+    </item>
+    
+    <item>
       <title>Brush as interaction</title>
-      <link>https://writing.grantcuster.com/posts/2022-09-01-brush-as-interaction/</link>
+      <link>https://writing.grantcuster.com/posts/2022-09-01-brush-as-interaction-copy/</link>
       <pubDate>Thu, 01 Sep 2022 09:58:24 +0000</pubDate>
       
-      <guid>https://writing.grantcuster.com/posts/2022-09-01-brush-as-interaction/</guid>
+      <guid>https://writing.grantcuster.com/posts/2022-09-01-brush-as-interaction-copy/</guid>
       <description>How do you change things?
 I&amp;rsquo;m interested in users having the ability to personalize websites. I&amp;rsquo;ve mainly thought about it as a case for UI that lets you choose different options, probably powered by CSS (see components.ai&amp;rsquo;s CSS.GUI).
 My CSS Paint project lets you use a brush. It&amp;rsquo;s interesting to use a brush. Should we let people style their website using a brush to paint styles on to divs?
