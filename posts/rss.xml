@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Writing - Grant Custer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Sep 2022 15:22:42 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 05 Nov 2022 17:00:24 +0000</lastBuildDate>
     
 	<atom:link href="https://writing.grantcuster.com/posts/rss.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Why listen to an AI-generated podcast? Why listen to a podcast?</title>
+      <link>https://writing.grantcuster.com/posts/2022-11-05-why-listen-to-an-ai-podcast-why-listen-to-podcasts/</link>
+      <pubDate>Sat, 05 Nov 2022 17:00:24 +0000</pubDate>
+      
+      <guid>https://writing.grantcuster.com/posts/2022-11-05-why-listen-to-an-ai-podcast-why-listen-to-podcasts/</guid>
+      <description>The new wave of generative text models is impressive. It&amp;rsquo;s also an opportunity to think about the purpose of reading or listening to interviews. Can generative models satisfy what I want? What do I want, really?
+Why listen to an interview I like interviews. I like reading and listening to interviews with authors or thinkers I like. When I listen, I think I&amp;rsquo;m generally looking for ways to understand their ideas better.</description>
+    </item>
     
     <item>
       <title>Lessons from Tailwind</title>
