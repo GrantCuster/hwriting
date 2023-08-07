@@ -6,10 +6,20 @@
     <description>Recent content on Writing - Grant Custer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Nov 2022 17:00:24 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Aug 2023 10:02:33 +0000</lastBuildDate>
     
 	<atom:link href="https://writing.grantcuster.com/rss.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Towards a task-based operating system: a sketch built with Linux, NixOS, Hyprland, Node, React</title>
+      <link>https://writing.grantcuster.com/posts/2023-08-07-a-task-based-operating-system-a-sketch-built-with-linux-nixos-hyprland-node-react/</link>
+      <pubDate>Mon, 07 Aug 2023 10:02:33 +0000</pubDate>
+      
+      <guid>https://writing.grantcuster.com/posts/2023-08-07-a-task-based-operating-system-a-sketch-built-with-linux-nixos-hyprland-node-react/</guid>
+      <description>My customized home dashboard  I&amp;rsquo;ve been working on building a task-focused operating system. Really it&amp;rsquo;s more like a presentational wrapper on top of a bunch of Linux tools. You can see the configuration at the repo, for now it should only be used as a reference.
+The idea The main idea is to have a separate workspace for each task. Workspaces are displayed on the home dashboard (accessed through Command+Tab).</description>
+    </item>
     
     <item>
       <title>Why listen to an AI-generated podcast? Why listen to a podcast?</title>
