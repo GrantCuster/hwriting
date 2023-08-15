@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Writing - Grant Custer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Aug 2023 10:02:33 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 15 Aug 2023 08:04:03 +0000</lastBuildDate>
     
 	<atom:link href="https://writing.grantcuster.com/posts/rss.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Suckless operating system primitives</title>
+      <link>https://writing.grantcuster.com/posts/2023-08-15-suckless-operating-system-primitives/</link>
+      <pubDate>Tue, 15 Aug 2023 08:04:03 +0000</pubDate>
+      
+      <guid>https://writing.grantcuster.com/posts/2023-08-15-suckless-operating-system-primitives/</guid>
+      <description>Suckless is a set of opinionated Linux software focused on simplicity and targeted towards experienced users. The most interesting part of the project to me is the attempt to break down the most common programs into a set of shareable primitives.
+Their main programs and tools:
+ dwm - tiling window manager dmenu - menu utility where you give a list of items and it lets you fuzzy filter through it.</description>
+    </item>
     
     <item>
       <title>Towards a task-based operating system: a sketch built with Linux, NixOS, Hyprland, Node, React</title>

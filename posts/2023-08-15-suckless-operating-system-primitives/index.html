@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+    <link rel="stylesheet" type="text/css" href="/font.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    
+
+
+<title>Suckless operating system primitives - Grant Custer</title>
+<meta property="description" content="Suckless is a set of opinionated Linux software focused on simplicity and targeted towards experienced users. The most interesting part of the project to me is the attempt to break down the most common programs into a set of shareable primitives.
+Their main programs and tools:
+ dwm - tiling window manager dmenu - menu utility where you give a list of items and it lets you fuzzy filter through it.">
+<meta property="og:title" content="Suckless operating system primitives - Grant Custer">
+<meta property="og:description" content="Suckless is a set of opinionated Linux software focused on simplicity and targeted towards experienced users. The most interesting part of the project to me is the attempt to break down the most common programs into a set of shareable primitives.
+Their main programs and tools:
+ dwm - tiling window manager dmenu - menu utility where you give a list of items and it lets you fuzzy filter through it.">
+<meta property="og:image" content="https://writing.grantcuster.com/writing.png">
+<meta property="og:url" content="https://writing.grantcuster.com/posts/2023-08-15-suckless-operating-system-primitives/">
+<meta property="twitter:card" content="summary_large_image">
+
+  </head>
+  <body>
+   <div class="hspacer"></div>
+    <div class="container">
+      <div class="jbm">
+      <div>Grant Custer</div>
+      <div><p style="margin: 0; text-indent: 2ch"><a href="https://feed.grantcuster.com">Feed</a>&nbsp; <a href="https://grantcuster.com">Index</a>&nbsp; <a href="https://twitter.com/grantcuster">Twitter</a></p></div>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    
+<div class="container">
+  <div><a href="/">Writing</a></div>
+  <div class="jbm">2023.08.15</div>
+  <h1>Suckless operating system primitives</h1>
+  <div><p><a href="https://suckless.org/">Suckless</a> is a set of opinionated Linux software focused on simplicity and targeted towards experienced users. The most interesting part of the project to me is the attempt to break down the most common programs into a set of shareable primitives.</p>
+<p>Their main programs and tools:</p>
+<ul>
+<li>dwm - tiling window manager</li>
+<li>dmenu - menu utility where you give a list of items and it lets you fuzzy filter through it. dmenu is the most impressive tool to me in terms of ability to usefully break out a workflow that can be then be combined in lots of interesting ways.</li>
+<li>st - a simple opinionated terminal</li>
+<li>surf - a simple, chromeless web browser</li>
+<li>tabbed - a generic tab primitive, intended to be used for tabs across their programs, including st and surf</li>
+</ul>
+<h2 id="a-full-workflow">A full workflow</h2>
+<p>My everyday workflow typically involves web browsers and terminals. Suckless has technically made the tools to do everything I need to do in that workflow. Surf for a browser (with tabbed for tabs), st for a terminal (with tabbed for tabs), dwm for a window manager, and dmenu as a launcher. There&rsquo;s something very satisfying about them having identified that tabs are a primitive that can be used outside and across programs.</p>
+<h2 id="do-i-actually-use-it">Do I actually use it?</h2>
+<p>No. I have used dwm and dmenu for a while. And I think I&rsquo;ve tried several of the others. But I&rsquo;ve tended to end up on less opinionated/purist tools that adopt many of the ideas they&rsquo;ve pioneered with dwm and particulary dmenu.</p>
+<h2 id="thinking-about-dmenu">Thinking about dmenu</h2>
+<p>One of the strengths of breaking things out into primitives, is giving people the tools to recombine them. Often this capability stays pretty theoretical. dmenu is one of the best personal experiences I&rsquo;ve had with using a primitive that I could then extend into more use-cases. (I actually use Rofi, which is a friendlier descendent of dmenu, but the principles apply.)</p>
+<p>One of dmenu&rsquo;s main functions is as a launcher, you script-feed it a list of programs and then fuzzy search through it to trigger the one you want to launch. It&rsquo;s perfectly useful for just that, but probably at some point you&rsquo;ll want to customize the list, or realize you have another list of items you want to operate on. For myself, I use it to go through a custom command palette, where I can do everything from launch programs, to set my computer brightness, to open a bookmarked website. <strong>The really empowering thing for me, which you wouldn&rsquo;t get in siloed programs, is the ability to put all of these items on the same level. Browser bookmarks feel much more useful and personal now that I have brought them out of the browser and into the operating system context.</strong> I feel less confined by which programs things are in and more focused on the action I&rsquo;m taking.</p>
+<figure>
+<img src="
+/images/20230815_08h30m15s_grim-1692103019.png
+" 
+ />
+<figcaption>My dmenu-like Rofi custom command palette</figcaption>
+</figure>
+<p>Another somewhat subtle but key point of dmenu is that it keeps most recently used items at the top of the list. This turns out to be great for workflows where you&rsquo;re often repeating the same two or three actions, and it lessens the cost of having extra commands &ndash; they just sink to the bottom.</p>
+</div>
+  <div class="hspacer"></div>
+  <div><a href="/">More writing</a></div>
+  <div class="spacer"></div>
+  <div class="hspacer"></div>
+</div>
+
+    <div class="container indent">
+      <div class="jbm">
+     <div>About</div>
+      <p>Grant Custer is a designer-programmer interested in alternative interfaces.</p>
+      <p>You can see work and inspiration in progress on my <a href="https://feed.grantcuster.com">Feed</a>  and my alternative interface experiments on <a href="https://constraint.systems">Constraint Systems</a>. I’m happy to talk on <a href="https://twitter.com/grantcuster">Twitter</a>, email: grantcuster at gmail dot com, or <a href="https://vis.social/@grantcuster">Mastodon</a>. You can see a full list of projects on my <a href="https://grantcuster.com">Index</a>.</p>
+      </p>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+  </body>
+</html>
