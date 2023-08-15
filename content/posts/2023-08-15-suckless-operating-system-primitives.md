@@ -3,7 +3,9 @@ date: 2023-08-15T08:04:03
 title: "Suckless operating system primitives"
 ---
 
-[Suckless](https://suckless.org/) is a set of opinionated Linux software focused on simplicity and targeted towards experienced users. The most interesting part of the project to me is the attempt to break down the most common programs into a set of shareable primitives.
+_Edit: There are credible reports that suckless/folks-involved-with-suckless engage with right-wing/neo-facist/nazi views. Views I completely reject. I've never been involved in the community, and tracking down what has happened is difficult from the outside, [this](https://tilde.team/~ben/suckmore/) seems like a good collection, albeit with link rot. But I've definitely seen a neo-fascist streak (often positioned as trolling) on linux youtube content and want to be clear I do not support any of that, and advise anyone entering into the linux community to stay away from that ideology, there's lots of folks (by far the majority) interested in software customization without those views._
+
+[suckless](https://suckless.org/) is a set of opinionated Linux software focused on simplicity and targeted towards experienced users. The most interesting part of the project to me is the attempt to break down the most common programs into a set of shareable primitives.
 
 Their main programs and tools:
 
