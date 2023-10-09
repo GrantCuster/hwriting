@@ -6,10 +6,22 @@
     <description>Recent content in Posts on Writing - Grant Custer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Aug 2023 08:04:03 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Oct 2023 10:38:38 +0000</lastBuildDate>
     
 	<atom:link href="https://writing.grantcuster.com/posts/rss.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>What did Pokemon do?</title>
+      <link>https://writing.grantcuster.com/posts/2023-10-09-what-did-pokemon-do/</link>
+      <pubDate>Mon, 09 Oct 2023 10:38:38 +0000</pubDate>
+      
+      <guid>https://writing.grantcuster.com/posts/2023-10-09-what-did-pokemon-do/</guid>
+      <description>Pokemon took the combat formula from traditional turn-based RPGs and turned it inside-out.
+In traditional RPGs you have a few characters who learn more and more attacks and spells.
+In Pokemon you capture more and more characters (pokemon) who can only have four moves each.
+Instead of choosing from a big list of attacks and spells, you choose from a list of Pokemon and then a small list of moves.</description>
+    </item>
     
     <item>
       <title>Suckless operating system primitives</title>
